@@ -1,0 +1,45 @@
+<div class="container img-slider mx-auto">
+
+  <div class="flex sm:flex-col md:flex-row lg:flex-row xl:flex-row">
+    <div class="px-4 flex flex-col   justify-center  py-2 m-2">
+      <div class="mb-10 img-title ml-10">
+        <span class="font-64">{{currentImage['name']}}</span>
+      </div>
+      <div class="flex justify-end px-12  ">
+        <div class="mr-3 prv-btn">
+          <button (click)="prvImg()" [ngClass]="{'non-active-button':this.currentButton!='prv'}"
+                  class="bg-white   hover:bg-white focus:outline-none text-gray-800  py-2 px-4  rounded">
+            PREV
+          </button>
+
+          <hr class="ml-4 border-bottom"/>
+
+        </div>
+        <div class="next-btn text-center">
+          <button (click)="nextImg()" [ngClass]="{'non-active-button':this.currentButton!='next'}"
+                  class="bg-white    hover:bg-white focus:outline-none text-gray-800 py-2 px-4  rounded">
+            NEXT
+          </button>
+          <hr class="ml-4 border-bottom"/>
+        </div>
+        <!--        <hr class="sep-line width-217 mt-10"/>-->
+      </div>
+    </div>
+    <div class="flex flex-1 ">
+      <div class="img-content  relative" onclick="">
+        <img class="object-cover x slide-img child w-full" [alt]="currentImage.name" [src]="currentImage.url"
+             [width]="100" [height]="100"/>
+
+        <div class="details absolute bg-gray flex flex-row">
+          <div>
+            Details
+          </div>
+          <div class="arrow ml-2 mt-1">
+            <img src="assets/img/right-icon.png" alt="right-icon" width="20" height="20"/>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+html {
+  height: 100vh;
+}
+
+.font-64 {
+  font-size: 64px;
+}
+
+.sep-line {
+  border: 0;
+  border-bottom: 1px solid red;
+  transform: rotate(180deg);
+}
+
+.v-line {
+  width: 100%;
+  left: -568px;
+  border: 0;
+  border-bottom: 1px solid #F2F2F2;
+  transform: rotate(90deg);
+}
+
+.width-217 {
+  width: 217px;
+}
+
+.font-12 {
+  font-size: 12px;
+}

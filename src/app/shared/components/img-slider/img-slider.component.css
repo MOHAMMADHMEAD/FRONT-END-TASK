@@ -1,0 +1,163 @@
+.slide-img {
+  width: 666px;
+  height: 729px;
+}
+
+button {
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: normal;
+  color: #333333;
+}
+
+.img-title {
+  width: 305px;
+  z-index: 1;
+}
+
+.non-active-button {
+  color: #BDBDBD
+}
+
+.hover .img {
+  overflow: hidden;
+}
+
+.hover img {
+  backface-visibility: hidden;
+  transition: transform 0.5s ease-in-out;
+}
+
+.hover:hover img {
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  transform: scale(1.3);
+}
+
+.img-content {
+  width: 70%;
+  overflow: hidden;
+
+}
+
+.img-content .slide-img {
+  /*animation-name: SlideLeft;*/
+  /*animation-duration: 2s;*/
+}
+
+.child {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+
+.img-content:hover .child, .img-content:focus .child {
+
+  -ms-transform: scale(1.4);
+  -moz-transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+  -o-transform: scale(1.4);
+  transform: scale(1.4);
+
+
+}
+
+.img-content:hover .details .arrow {
+
+  transform: translate(20px, 0)
+
+}
+
+.next-btn {
+
+}
+
+
+.border-bottom {
+  width: 0;
+  border: 0;
+  border-bottom: 1px solid black;;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+}
+
+.next-btn:hover .border-bottom {
+  width: 40px;
+  animation-play-state: running;
+  animation-name: fadeInLeft;
+
+}
+
+.prv-btn:hover .border-bottom {
+  width: 40px;
+  animation-play-state: running;
+  animation-name: fadeInRight;
+
+}
+
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.details {
+  background: white;
+  bottom: 0;
+  width: 150px;
+  padding: 8px;
+  color: black;
+}
+
+@keyframes SlideLeft {
+  0% {
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 0.8;
+    transform: translateX(-1000px);
+  }
+}
+
+/* Media Queries */
+/*@media screen and (max-width: 960px) {*/
+/*  .img-content {*/
+/*    width: 100%;*/
+/*    margin: 20px 0px*/
+/*  }*/
+
+/*}*/
+
+
