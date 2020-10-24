@@ -3,10 +3,8 @@ Majid Al Futtaim Digital Labs.
 
 [Demo](https://maf-assignment.netlify.app/)
 
-** under consideration I have start worked on Saturday (not full day)
-**
-**if i have one day more i can code it using vue js and make it more professional
-**
+under consideration I have start worked on Saturday(not full day)
+if i have one day more i can code it using vue js and make it more professional
 
 # Technology
 
