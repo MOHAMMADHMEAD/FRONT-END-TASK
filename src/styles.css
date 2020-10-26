@@ -9,7 +9,7 @@ html {
 
 .sep-line {
   border: 0;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #F2F2F2;
   transform: rotate(180deg);
 }
 
@@ -19,6 +19,7 @@ html {
   border: 0;
   border-bottom: 1px solid #F2F2F2;
   transform: rotate(90deg);
+  z-index: -1;
 }
 
 .width-217 {
